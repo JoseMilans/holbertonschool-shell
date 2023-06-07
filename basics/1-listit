@@ -1,2 +1,2 @@
 #!/bin/bash
-Run the ls command to list the contents of my current directory.
+ls
