@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name ".*" -type f -empty -o -type d -empty | wc -l
+find . -type f -empty -o -type d -empty | sed 's#.*/##'
