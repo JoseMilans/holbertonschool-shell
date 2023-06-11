@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -nk2,2 < "$1" | head -n11 | cut -d'\t' -f1
+cut -f1 | sort | uniq -c | sort -rn | tail -n +2 | cut -d' ' -f8-
