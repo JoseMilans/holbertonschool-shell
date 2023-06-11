@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(tr '\n' ' '<<<"$1" | fold -w1 | head -n1)"
+echo "$(tr '\n' ' '<<<"$1" | fold -w1 | head -c10)"
