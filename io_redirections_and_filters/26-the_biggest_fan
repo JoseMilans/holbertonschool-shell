@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -nk5,5 < "$1" | head -n11
+sort -nk2,2 < "$1" | head -n11
