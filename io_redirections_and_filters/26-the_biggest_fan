@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -nk2,2 < "$1" | head -n11
+sort -n -k2,2 < "$1" | head -n11 | cut -d'\t' -f1
