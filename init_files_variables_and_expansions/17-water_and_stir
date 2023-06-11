@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( WATER + STIR ))
+echo $((10#$(echo $WATER | tr -d '[:alpha:]') + 10#$(echo $STIR | tr -d '[:alpha:]')))"bestchol"
