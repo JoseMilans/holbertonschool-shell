@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c "import codecs; print(codecs.decode('$1', 'rot_13'))"
+tr 'A-Za-z' 'N-ZA-Mn-za-m'
