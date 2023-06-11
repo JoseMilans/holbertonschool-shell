@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$((10#${WATER//w/0} + 10#${STIR//s/0}))" | base250 | tr '0123456789' 'bestchol' | head -c 1
+echo "$((10#${WATER//w/0} + 10#${STIR//s/0}))" | base250 | cut -c1
