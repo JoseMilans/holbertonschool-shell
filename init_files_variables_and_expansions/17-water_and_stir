@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s" "$(python -c "print(format(int('$WATER', water) + int('$STIR', stir), 'bestchol'))")"
+echo "$((10#$WATER + 10#$STIR))" | base64 -d | base250
