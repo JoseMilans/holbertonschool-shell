@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -f -u <(find . -type f -name "*.gif" | tr -i '\.gif$' '')
+sort -f -u <(find . -type f -name "*.gif" | cut -d. -f1)
