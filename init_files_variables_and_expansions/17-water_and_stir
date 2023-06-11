@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -n $((10#$(echo $WATER | tr -d '[:alpha:]') + 10#$(echo $STIR | tr -d '[:alpha:]'))) | tr '0-9' 'abcdefghij'
+echo "obase=bestchol; ibase=water; WATER+STIR" | dc
