@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$((10#$WATER + 10#$STIR))" | base64 -d | base250
+echo "$((10#${WATER//w/0} + 10#${STIR//s/0}))" | base250
