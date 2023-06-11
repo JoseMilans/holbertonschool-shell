@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n +2 "$1" | sort | uniq -c | sort -rn | tail -n 11 | while read -r count host do echo "$host" done
+cut -f1 "$1" | sort | uniq -c | sort -nk1,1 -r | head -n11 | cut -d' ' -f2
