@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -f -u $(find . -type f -name "*.gif" | sed -E 's/.*\.gif$//')
+sort -f -u <(find . -type f -name "*.gif" | tr '\.gif$' '')
