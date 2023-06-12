@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( $(echo $WATER | tr '[:lower:]' '[:upper:]' | tr -d 'WATER') + $(echo $STIR | tr '[:lower:]' '[:upper:]' | tr -d 'STIR') ))
+echo "ibase=water; obase=bestchol; $(echo "$WATER" | tr '[:lower:]' '[:upper:]') + $(echo "$STIR" | tr '[:lower:]' '[:upper:]')" | dc
