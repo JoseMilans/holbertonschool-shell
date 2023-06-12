@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f1 "$1" | sort | uniq -c | sort -nk1,1 -r | head -n11 | cut -d' ' -f2
+cut -f 1 | sort | uniq -c | sort -rn | head -n 11
