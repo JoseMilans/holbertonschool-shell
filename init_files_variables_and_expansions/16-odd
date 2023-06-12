@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -E '^(?!.*?\n).*$' input.txt
+grep -n "" "$1" | grep -E "^[[:digit:]]+[13579]:" | cut -d':' -f2-
