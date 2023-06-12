@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -f -u <(find . -type f -name "*.gif" | cut -d. -f1 | uniq)
+find . -type f -name "*.gif" | rev | cut -d '/' -f 1 | cut -d '.' -f 1 --complement | rev | sort -V --ignore-case
