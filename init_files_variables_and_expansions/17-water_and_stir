@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((water=10#${WATER}, stir=10#${STIR}, bestchol=water+stir, bestchol))
+echo $(( $(echo $WATER | tr '[:lower:]' '[:upper:]' | tr -d 'WATER') + $(echo $STIR | tr '[:lower:]' '[:upper:]' | tr -d 'STIR') ))
