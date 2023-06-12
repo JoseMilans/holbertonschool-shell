@@ -1,0 +1,2 @@
+#!/bin/bash
+grep -n "" "$1" | grep -E "^[[:digit:]]+[13579]:.*" | cut -d':' -f2-
